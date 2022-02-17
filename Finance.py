@@ -41,10 +41,6 @@ def loginXBRL(**kwargs):
 
 #add time here. pair refresh token and auth token with thier times
 
-loginXBRL(grant_type='password', client_id='f413414c-37c7-404e-a208-f0024fcb839d',
-          client_secret='f65eaa70-2809-46be-b61c-342f05b9a3e9', username='devin.martin.lpa@gmail.com'
-          , password='Ekrill345')
-
 class Report:   
     """Enter and Exit methods:used with 'with' and to eventually parse into other documentation.
     Using XBRL API"""
@@ -223,6 +219,9 @@ def getBalanceSheetView():
     desired = soup.find('div', class_=True)
     print(desired.text)
 
+
+#obligatory skill counter here that has nothing to do with the project
+
 def SkillsCounter():
     '''Seeing what is in demand on StackOverflow. Modify function as you will.'''
     djcount, flacount = 0, 0
@@ -261,10 +260,6 @@ def write(subject):
     except:
         RuntimeError('Cannot Write')
  
-
-NewReport = Report(name='Apple')
-NewReport.find()
-write(NewReport.read('document'))
 
 
 
