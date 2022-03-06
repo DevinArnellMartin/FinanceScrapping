@@ -105,38 +105,7 @@ class Report:
         
         
 
-    # def addToPostgres(self):
-    #     '''Connecting to your own DB
-    #     Still requires you to know the basics of Postgres
-    #     Might have connect be in init. ONE-TO-MANY: company -to - 10k accordion URLS''' 
-    #     connect = psycopg2.connect("dbname=Finance user=postgres")
-    #     connect = connect.cursor()
-    #     #If no hits in column. skip
-    #     try:
-    #         connection = psycopg2.connect(user = "postgres",
-    #                                     password = "fuckinghell",
-    #                                     host = "localhost",
-    #                                     port = "5432",
-    #                                     database = "Finance")
-    #         # connect = psycopg2.connect("dbname=Finance user=postgres")
-    #         cursor = connection.cursor()
-            
-    #         connect.execute(f'INSERT INTO company (hits) VALUES ({None})')
-    #         connection.commit()
-    #         print("Table altered ")
-
-    #     except (psycopg2.DatabaseError) as error :
-    #         print("Error while creating PostgreSQL table", error)
-    #     finally:
-    #         #closing database connection.
-    #             # if(connection):
-    #             #     cursor.close()
-    #             #     connection.close()
-    #             print(connect.execute('SELECT * FROM company'))
-    #             print("PostgreSQL connection is closed")
-                
-
-    #     #print table
+    
         
 
     def read(self,*keywords,occurance=10):
